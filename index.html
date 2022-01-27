@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Ultimo reto</title>
+</head>
+<body>
+    <header>
+        <nav class="header--nav-container">
+            <ul class="header-nav--section_left">
+                <li class="header-nav--item"></li>
+                <li class="header-nav--item"></li>
+            </ul>
+            <ul class="header-nav--section_center">
+                <li class="header-nav--item">
+                    <img class="logo--img" src="https://cdn.pixabay.com/photo/2021/08/30/13/20/logo-6585807_960_720.png" alt="logo" title="logo" >
+                </li>
+            </ul>
+            <ul class="header-nav--section_right">
+                <li class="header-nav--item"></li>
+                <li class="header-nav--item">
+                    <button type="button" class="nav--burguer_button">
+                        <div class="nav-burger_button--desing">
+                            <div class="desing--line"></div>
+                            <div class="desing--line"></div>
+                            <div class="desing--line"></div>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main--inicio">
+            <div class="main-inicio--container">
+                <div class="inicio--logo">
+                    <img class="logo--img" src="https://cdn.pixabay.com/photo/2021/08/30/13/20/logo-6585807_960_720.png" alt="logo" title="logo" >
+                </div>
+                <div class="inicio--name">
+                    <h1>CuentasClaras</h1>
+                </div>
+            </div>
+        </section>
+        <section class="main-inicio--descript">
+
+            <!-- Inicio del wave -->
+
+            <div class="bg_color"></div>
+            <div class="wave w1"></div>
+            <div class="wave w2"></div>
+
+            <!-- Fin del wave -->
+
+            <div class="inicio-descript--container">
+                <div class="descript-card--container">
+                    <div class="descript-quienes_somos-title--container">
+                        <h2 class="descript--title">¿Quienes Somos?</h2>
+                    </div>
+                    <div class="descript--quienes_somos">
+                        <p class="quienes_somos--text"><span>CuentasClaras</span> es un proyecto enfocado en brindarle solución a la problematica que existe en nuestra sociedad, ya que las personas no saben que impuestos deben de pagar ni tampoco como calcularlos</p>
+                    </div>
+                    <div class="descript--button_container">
+                        <button class="descript--button" type="button">
+                            ¡Empezar!
+                        </button>
+                    </div>
+                </div>
+                <div class="descript--image">
+                    <img src="./img/element1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="main--formulario">
+            <div class="main-formulario--container">
+                <div class="formulario-title--container">
+                    <h2 class="formulario--title" id="tituloDelFormulario">¡Comencemos...!</h2>
+                </div>
+                <form class="formulario-input--container" action="">
+                    <div class="input--container" id="formulario1">
+                        <div class="input--item">
+                            <label for="inputTipoDePersona">¿Eres una persona natural o juridica?</label>
+                            <div class="input--box">
+                                <input type="list" list="tipoDePersona" id="inputTipoDePersona" name="inputTipoDePersona"/>
+                                <datalist id="tipoDePersona">
+                                    <option value="Persona Natural"></option>
+                                    <option value="Persona Jurídica"></option>
+                                </datalist>
+
+                            </div>
+                            <span><a href="https://www.eltiempo.com/justicia/servicios/diferencias-entre-persona-natural-y-juridica-621771#:~:text=La%20persona%20natural%2C%20es%20la,ejerce%20derechos%20y%20contrae%20obligaciones." target="_blank"> No sé que es!</a></span>
+                        </div>
+                        <button type="button" class="formulario--button" onclick="tipoDePersona()">Continuar</button>
+                    </div>
+                    <div class="input--container" id="formulario2">
+                        <div class="input--item">
+                            <label for="inputIngresosBrutos">¿Obtuvo ingresos brutos iguales o superiores a $ 49.850.000?</label>
+                            <div class="input--box">
+                                <input type="list" list="SiONo" id="inputIngresosBrutos" name="inputIngresosBrutos"/>
+                                <datalist id="SiONo">
+                                    <option value="Si"></option>
+                                    <option value="No"></option>
+                                </datalist>
+                            </div>
+                            <span><a href="#" target="_blank"> No sé que es el ingreso bruto!</a></span>
+                        </div>
+                        <div class="input--item">
+                            <label for="inputPatrimonioBruto">Su patrimonio bruto a 31 de diciembre de 2020 fue superior a $160.232.000</label>
+                            <div class="input--box">
+                                <input type="list" list="SiONo" id="inputPatrimonioBruto" name="inputPatrimonioBruto"/>
+                                <datalist id="SiONo">
+                                    <option value="Si"></option>
+                                    <option value="No"></option>
+                                </datalist>
+                            </div>
+                            <span><a href="#" target="_blank"> No sé que es el patrimonio bruto!</a></span>
+                        </div>
+                        <div class="input--item">
+                            <label for="inputConsumoTarjetaCredito">Los consumos con tarjetas de crédito en el 2020 fueron superiores a $ 49.850.000?</label>
+                            <div class="input--box">
+                                <input type="list" list="SiONo" id="inputConsumoTarjetaCredito" name="inputConsumoTarjetaCredito"/>
+                                <datalist id="SiONo">
+                                    <option value="Si"></option>
+                                    <option value="No"></option>
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="input--item">
+                            <label for="inputComprasYConsumos">El total de compras y consumos en el año 2020 fueron superiores a $ 49.850.000</label>
+                            <div class="input--box">
+                                <input type="list" list="SiONo" id="inputComprasYConsumos" name="inputComprasYConsumos"/>
+                                <datalist id="SiONo">
+                                    <option value="Si"></option>
+                                    <option value="No"></option>
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="input--item">
+                            <label for="inputConsignacionesBancarias">El valor total de consignaciones bancarias, depósitos e inversiones financieras en el 2020 superiores a $ 49.850.000</label>
+                            <div class="input--box">
+                                <input type="list" list="SiONo" id="inputConsignacionesBancarias" name="inputConsignacionesBancarias"/>
+                                <datalist id="SiONo">
+                                    <option value="Si"></option>
+                                    <option value="No"></option>
+                                </datalist>
+                            </div>
+                        </div>
+                        <button type="button" class="formulario--button" onclick="comprobarObligacionPN()">Continuar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+    <script src="./js/algoritmo.js"></script>
+</body>
+</html>
